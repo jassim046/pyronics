@@ -2,7 +2,7 @@ import Image from "next/image";
 import Scripts from "./components/Scripts";
 import Script from "next/script";
 import Link from "next/link";
-export default function Home() {
+export default function () {
   return (
     <>
       {/* Curser Pointer */}
