@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
- <>
-  {/* Curser Pointer */}
-  <div className="cursor" />
-  <div className="cursor2" />
-  <div className="page-wraper">
-    {/* HEADER START */}
-    <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
+    <>
+      {/* Curser Pointer */}
+      <div className="cursor" />
+      <div className="cursor2" />
+      <div className="page-wraper">
+        {/* HEADER START */}
+         <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
           <div className="main-bar-wraper navbar-expand-lg">
             <div className="main-bar">
               <div className="clearfix">
@@ -47,11 +47,11 @@ export default function Home() {
                     <li>
                       <Link href="/about">About Us</Link>
                     </li>
-
-                    {/*Technologies Menu with Submenu */}
+                    
+                     {/*Technologies Menu with Submenu */}
                     <li className="menu-item-has-children">
                       <Link href="/technologies" className="menu-link-with-arrow">
-                        Technologies
+                        Technologies 
                         <i className="fa fa-angle-down submenu-icon" />
                       </Link>
 
@@ -62,16 +62,16 @@ export default function Home() {
                         <li>
                           <Link href="/cyber-security">Cyber Security</Link>
                         </li>
-                        <li>
+                         <li>
                           <Link href="/networking-solutions">Networking Solutions</Link>
                         </li>
-                        <li>
+                         <li>
                           <Link href="/passive-infrastructure">Passive Infrastructure</Link>
                         </li>
-                        <li>
+                         <li>
                           <Link href="/physical-security">Physical Security</Link>
                         </li>
-                        <li>
+                         <li>
                           <Link href="/audio-video-distribution">Audio / Video Distribution</Link>
                         </li>
                         <li>
@@ -142,14 +142,14 @@ export default function Home() {
             </div>
           </div>
         </header>
-    {/* HEADER END */}
-    {/* CONTENT START */}
-    <div className="page-content">
-      <div className="page-breadcrumb">
-        <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
-          <h2 className="text-white text-center">About Us </h2>
-        </div>
-      </div>
+        {/* HEADER END */}
+        {/* CONTENT START */}
+        <div className="page-content">
+          <div className="page-breadcrumb">
+            <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
+              <h2 className="text-white text-center">Project Management </h2>
+            </div>
+          </div>
           {/* About Section */}
           {/* ABOUT ONE SECTION START */}
           <div className="section-full p-t90  p-b50  about-section-one-wrap">
