@@ -1,9 +1,12 @@
-import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
+
 export default function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      {/* Curser Pointer */}
       <div className="cursor" />
       <div className="cursor2" />
 
@@ -18,37 +21,33 @@ export default function Home() {
                 {/* Logo */}
                 <div className="logo-header">
                   <div className="logo-header-inner logo-header-one">
-                    <a href="/">
+                    <Link href="/">
                       <img src="images/logo-dark.png" alt="logo" className="desktop-logo-show" />
                       <img src="images/logo-light.png" alt="logo" className="mobile-logo-show" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
-                {/* Mobile Toggle Button */}
-               <button
-  id="mobile-side-drawer"
-  data-target=".header-nav"
-  data-toggle="collapse"
-  type="button"
-  className="navbar-toggler collapsed"
->
-  <span className="sr-only">Toggle navigation</span>
-  <span className="icon-bar icon-bar-first" />
-  <span className="icon-bar icon-bar-two" />
-  <span className="icon-bar icon-bar-three" />
-</button>
+                {/* ✅ WORKING MOBILE TOGGLE */}
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <span className="icon-bar icon-bar-first" />
+                  <span className="icon-bar icon-bar-two" />
+                  <span className="icon-bar icon-bar-three" />
+                </button>
 
-<div className="header-nav collapse navbar-collapse justify-content-center">
-  <ul className="nav navbar-nav main-menu">
+                {/* ✅ COLLAPSIBLE NAVIGATION */}
+                <div className={`header-nav navbar-collapse ${isOpen ? "show" : ""}`}>
+                  <ul className="nav navbar-nav main-menu">
 
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About Us</Link></li>
 
                     <li className="menu-item-has-children">
-                      <Link href="/technologies" className="menu-link-with-arrow">
-                        Technologies <i className="fa fa-angle-down submenu-icon" />
-                      </Link>
+                      <Link href="/technologies">Technologies</Link>
                       <ul className="sub-menu">
                         <li><Link href="/data-center-infrastructure">Data Center Infrastructure</Link></li>
                         <li><Link href="/cyber-security">Cyber Security</Link></li>
@@ -65,9 +64,7 @@ export default function Home() {
                     </li>
 
                     <li className="menu-item-has-children">
-                      <Link href="/services" className="menu-link-with-arrow">
-                        Services <i className="fa fa-angle-down submenu-icon" />
-                      </Link>
+                      <Link href="/services">Services</Link>
                       <ul className="sub-menu">
                         <li><Link href="/project-management">Project Management</Link></li>
                         <li><Link href="/solution-planning">Solution Planning</Link></li>
@@ -89,17 +86,16 @@ export default function Home() {
         {/* ================= HEADER END ================= */}
 
 
+
         {/* ================= CONTENT START ================= */}
         <div className="page-content">
 
-          {/* Breadcrumb */}
           <div className="page-breadcrumb">
             <div className="viewbreadcrumb text-center">
               <h2 className="text-white">Data Center Infrastructure</h2>
             </div>
           </div>
 
-          {/* About Section */}
           <section className="about-section p-t90 p-b60">
             <div className="container">
               <div className="row align-items-center">
@@ -107,10 +103,11 @@ export default function Home() {
                 <div className="col-lg-6 m-b30">
                   <h2>Data Center Infrastructure</h2>
                   <p>
-                    In a digital-first world, robust data center infrastructure is critical to business performance. At Pyronics, we design and implement reliable, scalable data center environments that ensure uninterrupted operations, enhanced security, and long-term efficiency.
+                    In a digital-first world, robust data center infrastructure is critical to business performance.
+                    At Pyronics, we design and implement reliable, scalable data center environments.
                   </p>
                   <p>
-                    From core hardware to intelligent monitoring, our integrated solutions are built to support evolving enterprise demands. Whether establishing a new facility or modernizing an existing one, Pyronics delivers optimized infrastructure designed for performance, resilience, and sustainable growth.
+                    From core hardware to intelligent monitoring, our integrated solutions support evolving enterprise demands.
                   </p>
                   <a href="/contact" className="site-button">Read More</a>
                 </div>
@@ -127,69 +124,12 @@ export default function Home() {
             </div>
           </section>
 
-
-          {/* Services Core Section */}
-          <section className="services-core-section p-b60">
-            <div className="container">
-              <div className="row">
-
-                {[
-                  {
-                    number: "01",
-                    icon: "fa-server",
-                    title: "High-Performance Servers",
-                    text: "Enterprise-grade servers engineered for fast data processing, application stability, and reliable computing."
-                  },
-                  {
-                    number: "02",
-                    icon: "fa-database",
-                    title: "Scalable Storage Solutions",
-                    text: "Secure and scalable storage systems designed for growing data demands and dependable backup."
-                  },
-                  {
-                    number: "03",
-                    icon: "fa-desktop",
-                    title: "High-Performance Workstations",
-                    text: "Powerful workstations optimized for engineers and designers handling compute-intensive workloads."
-                  },
-                  {
-                    number: "04",
-                    icon: "fa-box",
-                    title: "Smart Cabinet Solutions",
-                    text: "Integrated smart cabinets with power distribution, cooling, and security."
-                  },
-                  {
-                    number: "05",
-                    icon: "fa-battery-full",
-                    title: "UPS Backup Systems",
-                    text: "Reliable UPS solutions ensuring uninterrupted power during outages."
-                  },
-                  {
-                    number: "06",
-                    icon: "fa-temperature-high",
-                    title: "Precision Cooling & Monitoring",
-                    text: "Advanced precision cooling and environmental monitoring for optimal infrastructure management."
-                  }
-                ].map((item, index) => (
-                  <div className="col-lg-4 col-md-6 m-b30" key={index}>
-                    <div className="services-core-item text-center">
-                      <span className="services-core-number">{item.number}</span>
-                      <i className={`fa-solid ${item.icon} services-core-icon`} />
-                      <h4>{item.title}</h4>
-                      <p>{item.text}</p>
-                    </div>
-                  </div>
-                ))}
-
-              </div>
-            </div>
-          </section>
-
         </div>
         {/* ================= CONTENT END ================= */}
 
 
-        {/* ================= FOOTER START ================= */}
+
+        {/* ================= FOOTER ================= */}
         <footer
           className="site-footer footer-dark"
           style={{ backgroundImage: 'url("images/background/count-bg.jpg")' }}
@@ -202,7 +142,6 @@ export default function Home() {
             </div>
           </div>
         </footer>
-        {/* ================= FOOTER END ================= */}
 
       </div>
     </>
