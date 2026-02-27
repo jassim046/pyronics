@@ -1,12 +1,15 @@
 import Image from "next/image";
+import Scripts from "./components/Scripts"; // Required for mobile menu to work
+import Script from "next/script";
 import Link from "next/link";
 
 export default function DataCenterInfrastructure() {
   return (
     <>
-      {/* Curser Pointer */}
+      {/* Cursor Pointer */}
       <div className="cursor" />
       <div className="cursor2" />
+      
       <div className="page-wraper">
         {/* HEADER START */}
         <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
@@ -23,7 +26,7 @@ export default function DataCenterInfrastructure() {
                   </div>
                 </div>
 
-                {/* Mobile Toggle Button */}
+                {/* Mobile Toggle Button - MUST HAVE ID mobile-side-drawer */}
                 <button
                   id="mobile-side-drawer"
                   data-target=".header-nav"
@@ -99,13 +102,14 @@ export default function DataCenterInfrastructure() {
 
         {/* CONTENT START */}
         <div className="page-content">
+          {/* Breadcrumb Section */}
           <div className="page-breadcrumb">
             <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
               <h2 className="text-white text-center">Data Center Infrastructure</h2>
             </div>
           </div>
 
-          {/* About Section */}
+          {/* Main Detail Section */}
           <div className="section-full p-t90 p-b50 about-section-one-wrap">
             <div className="about-section-one">
               <div className="container">
@@ -117,12 +121,12 @@ export default function DataCenterInfrastructure() {
                           <h2>Data Center Infrastructure</h2>
                           <p>
                             In a digital-first world, robust data center infrastructure is critical to business performance. At Pyronics, we design and implement reliable, scalable data center environments that ensure uninterrupted operations, enhanced security, and long-term efficiency. From core hardware to intelligent monitoring, our integrated solutions are built to support evolving enterprise demands.
-                            <br />
+                            <br /><br />
                             Whether establishing a new facility or modernizing an existing one, Pyronics delivers optimized infrastructure designed for performance, resilience, and sustainable growth.
                           </p>
                         </div>
                         <Link href="/contact" className="site-button">
-                          Read More
+                          Contact Us
                         </Link>
                       </div>
                     </div>
@@ -131,7 +135,7 @@ export default function DataCenterInfrastructure() {
                         <img
                           src="images/tech/infrastructure.jpg"
                           className="img-fluid"
-                          alt="Data Center"
+                          alt="Data Center Infrastructure"
                         />
                       </div>
                     </div>
@@ -141,7 +145,7 @@ export default function DataCenterInfrastructure() {
             </div>
           </div>
 
-          {/* Core Grid Section */}
+          {/* Core Services Grid */}
           <section className="services-core-section">
             <div className="services-core-container">
               <div className="services-core-grid">
@@ -149,37 +153,42 @@ export default function DataCenterInfrastructure() {
                   <span className="services-core-number">01</span>
                   <i className="services-core-icon fa-solid fa-server" />
                   <h4>High-Performance Servers</h4>
-                  <p>Enterprise-grade servers engineered for fast data processing, application stability, and reliable computing across mission-critical business operations.</p>
+                  <p>Enterprise-grade servers engineered for fast data processing, application stability, and reliable computing.</p>
                 </div>
+
                 <div className="services-core-item">
                   <span className="services-core-number">02</span>
                   <i className="services-core-icon fa-solid fa-database" />
                   <h4>Scalable Storage Solutions</h4>
-                  <p>Secure and scalable storage systems designed for growing data demands, rapid access, and dependable backup and disaster recovery.</p>
+                  <p>Secure systems designed for growing data demands, rapid access, and dependable backup recovery.</p>
                 </div>
+
                 <div className="services-core-item">
                   <span className="services-core-number">03</span>
                   <i className="services-core-icon fa-solid fa-desktop" />
                   <h4>High-Performance Workstations</h4>
-                  <p>Powerful workstations optimized for engineers and designers handling multitasking, visualization, and compute-intensive workloads.</p>
+                  <p>Powerful workstations optimized for engineers handling multitasking and compute-intensive workloads.</p>
                 </div>
+
                 <div className="services-core-item">
                   <span className="services-core-number">04</span>
                   <i className="services-core-icon fa-solid fa-box" />
                   <h4>Smart Cabinet Solutions</h4>
-                  <p>Integrated smart cabinets with power distribution, cooling, and security, enabling remote monitoring and efficient space utilization.</p>
+                  <p>Integrated cabinets with power distribution, cooling, and security for efficient space utilization.</p>
                 </div>
+
                 <div className="services-core-item">
                   <span className="services-core-number">05</span>
                   <i className="services-core-icon fa-solid fa-battery-full" />
                   <h4>UPS Backup Systems</h4>
-                  <p>Reliable UPS solutions ensuring uninterrupted power during outages, safeguarding critical systems and maintaining business continuity.</p>
+                  <p>Reliable UPS solutions ensuring uninterrupted power during outages, safeguarding critical systems.</p>
                 </div>
+
                 <div className="services-core-item">
                   <span className="services-core-number">06</span>
                   <i className="services-core-icon fa-solid fa-temperature-high" />
                   <h4>Precision Cooling & Monitoring</h4>
-                  <p>Advanced precision cooling, DCIM, intelligent cabling, and environmental monitoring for optimal temperature, humidity control, and proactive infrastructure management.</p>
+                  <p>Advanced cooling and DCIM for optimal temperature, humidity control, and proactive management.</p>
                 </div>
               </div>
             </div>
@@ -188,14 +197,19 @@ export default function DataCenterInfrastructure() {
         {/* CONTENT END */}
 
         {/* FOOTER START */}
-        <footer className="site-footer footer-dark" style={{ backgroundImage: 'url("images/background/count-bg.jpg")' }}>
+        <footer
+          className="site-footer footer-dark"
+          style={{ backgroundImage: 'url("images/background/count-bg.jpg")' }}
+        >
           <div className="footer-top">
             <div className="container">
               <div className="row">
                 <div className="col-lg-4 col-md-12">
                   <div className="widget widget_about">
                     <div className="logo-footer clearfix">
-                      <Link href="/"><img src="images/logo-dark.png" alt="" /></Link>
+                      <Link href="/">
+                        <img src="images/logo-dark.png" alt="logo" />
+                      </Link>
                     </div>
                     <ul className="social-icons">
                       <li><a href="#"><i className="bi bi-twitter-x" /></a></li>
@@ -220,7 +234,7 @@ export default function DataCenterInfrastructure() {
                     <h3 className="widget-title">Quick Links</h3>
                     <ul className="widget_address newlinks">
                       <li><Link href="/">Home</Link></li>
-                      <li><Link href="/about">About us</Link></li>
+                      <li><Link href="/about">About Us</Link></li>
                       <li><Link href="/services">Services</Link></li>
                       <li><Link href="/technologies">Technologies</Link></li>
                       <li><Link href="/projects">Projects</Link></li>
@@ -233,20 +247,22 @@ export default function DataCenterInfrastructure() {
           </div>
           <div className="footer-bottom">
             <div className="container">
-              <div className="wt-footer-bot-left text-center">
-                <span className="copyrights-text">Copyright © 2026 All Rights Reserved by Pyronics Engineering Solutions.</span>
+              <div className="wt-footer-bot-left">
+                <span className="copyrights-text">
+                  Copyright © 2026 Pyronics Engineering Solutions.
+                </span>
               </div>
             </div>
           </div>
         </footer>
         {/* FOOTER END */}
-
+        
         <button className="scroltop">
           <span className="fa fa-angle-up relative" id="btn-vibrate" />
         </button>
       </div>
 
-      {/* CRITICAL: This enables the mobile menu functionality */}
+      {/* IMPORTANT: This script component enables the mobile menu functionality */}
       <Scripts />
     </>
   );
