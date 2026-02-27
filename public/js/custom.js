@@ -662,7 +662,7 @@ function slider_home_two(){
 
 if (yearEl) {
   yearEl.textContent = years;
-}
+
 
 
 //-------- ACDion Function ------------//
