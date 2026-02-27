@@ -658,10 +658,7 @@ function slider_home_two(){
 
     const startYear = 1993;
     const currentYear = new Date().getFullYear();
-    const yearEl = document.getElementById("yearsExperience");
-
-if (yearEl) {
-  yearEl.textContent = years;
+    document.getElementById("yearsExperience").textContent = currentYear - startYear;
 
 
 
