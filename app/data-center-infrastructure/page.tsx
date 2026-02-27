@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Scripts from "../components/Scripts"; // THIS LINE FIXES THE 'CANNOT FIND NAME' ERROR
+import Scripts from "components/Scripts"; // THIS LINE FIXES THE 'CANNOT FIND NAME' ERROR
 
 export default function Home() {
   return (
