@@ -150,6 +150,10 @@ export default function Home() {
               <h2 className="text-white text-center">Support Service</h2>
             </div>
           </div>
+
+			{/* Prevent custom.js crash */}
+          <span id="yearsExperience" style={{ display: "none" }}>0</span>
+			
           {/* About Section */}
           <section id="about" className="about-section p-t60 p-b60">
             <div className="container">
