@@ -7,11 +7,13 @@ export default function Home() {
       <div className="cursor" />
       <div className="cursor2" />
       <div className="page-wraper">
+       
         {/* HEADER START */}
         <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
           <div className="main-bar-wraper navbar-expand-lg">
             <div className="main-bar">
               <div className="clearfix">
+
                 {/* Logo */}
                 <div className="logo-header">
                   <div className="logo-header-inner logo-header-one">
@@ -48,47 +50,24 @@ export default function Home() {
                       <Link href="/about">About Us</Link>
                     </li>
 
-                    {/*Technologies Menu with Submenu */}
+                    {/* Technologies Menu with Submenu */}
                     <li className="menu-item-has-children">
                       <Link href="/technologies" className="menu-link-with-arrow">
                         Technologies
                         <i className="fa fa-angle-down submenu-icon" />
                       </Link>
-
                       <ul className="sub-menu">
-                        <li>
-                          <Link href="/data-center-infrastructure">Data Center Infrastructure</Link>
-                        </li>
-                        <li>
-                          <Link href="/cyber-security">Cyber Security</Link>
-                        </li>
-                        <li>
-                          <Link href="/networking-solutions">Networking Solutions</Link>
-                        </li>
-                        <li>
-                          <Link href="/passive-infrastructure">Passive Infrastructure</Link>
-                        </li>
-                        <li>
-                          <Link href="/physical-security">Physical Security</Link>
-                        </li>
-                        <li>
-                          <Link href="/audio-video-distribution">Audio / Video Distribution</Link>
-                        </li>
-                        <li>
-                          <Link href="/fire-safety">Fire & Safety</Link>
-                        </li>
-                        <li>
-                          <Link href="/sound-and-paging">Sound and Paging</Link>
-                        </li>
-                        <li>
-                          <Link href="/time-synchronization">Time Synchronization</Link>
-                        </li>
-                        <li>
-                          <Link href="/ip-telephony">IP Telephony</Link>
-                        </li>
-                        <li>
-                          <Link href="/remote-telemetry-units">Remote Telemetry Units</Link>
-                        </li>
+                        <li><Link href="/data-center-infrastructure">Data Center Infrastructure</Link></li>
+                        <li><Link href="/cyber-security">Cyber Security</Link></li>
+                        <li><Link href="/networking-solutions">Networking Solutions</Link></li>
+                        <li><Link href="/passive-infrastructure">Passive Infrastructure</Link></li>
+                        <li><Link href="/physical-security">Physical Security</Link></li>
+                        <li><Link href="/audio-video-distribution">Audio / Video Distribution</Link></li>
+                        <li><Link href="/fire-safety">Fire & Safety</Link></li>
+                        <li><Link href="/sound-and-paging">Sound and Paging</Link></li>
+                        <li><Link href="/time-synchronization">Time Synchronization</Link></li>
+                        <li><Link href="/ip-telephony">IP Telephony</Link></li>
+                        <li><Link href="/remote-telemetry-units">Remote Telemetry Units</Link></li>
                       </ul>
                     </li>
 
@@ -98,20 +77,11 @@ export default function Home() {
                         Services
                         <i className="fa fa-angle-down submenu-icon" />
                       </Link>
-
                       <ul className="sub-menu">
-                        <li>
-                          <Link href="/project-management">Project Management</Link>
-                        </li>
-                        <li>
-                          <Link href="/solution-planning">Solution Planning</Link>
-                        </li>
-                        <li>
-                          <Link href="/installations">Installations</Link>
-                        </li>
-                        <li>
-                          <Link href="/support-services">Support Services</Link>
-                        </li>
+                        <li><Link href="/project-management">Project Management</Link></li>
+                        <li><Link href="/solution-planning">Solution Planning</Link></li>
+                        <li><Link href="/installations">Installations</Link></li>
+                        <li><Link href="/support-services">Support Services</Link></li>
                       </ul>
                     </li>
 
@@ -138,11 +108,13 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </header>
         {/* HEADER END */}
+		  
         {/* CONTENT START */}
         <div className="page-content">
           <div className="page-breadcrumb">
