@@ -151,135 +151,113 @@ export default function Home() {
             </div>
           </div>
 		
-              {/* ================= ABOUT SECTION ================= */}
-      <div className="section-full about-section-one-wrap">
-        <div className="container">
-          <div className="row align-items-center">
+             {/* ABOUT ONE SECTION START */}
+<section className="about-section-one-wrap py-5">
+  <div className="container">
+    <div className="row align-items-center">
 
-            {/* Left Content */}
-            <div className="col-lg-6 col-md-12 mb-4">
-              <div className="about-content">
-                <h2>Data Center Infrastructure</h2>
-                <p>
-                  In a digital-first world, robust data center infrastructure is critical
-                  to business performance. At Pyronics, we design and implement
-                  reliable, scalable data center environments that ensure uninterrupted
-                  operations, enhanced security, and long-term efficiency.
-                </p>
-
-                <p>
-                  Whether establishing a new facility or modernizing an existing one,
-                  Pyronics delivers optimized infrastructure designed for performance,
-                  resilience, and sustainable growth.
-                </p>
-
-                <a href="/contact" className="site-button mt-3">
-                  Read More
-                </a>
-              </div>
-            </div>
-
-            {/* Right Image */}
-            <div className="col-lg-6 col-md-12 mb-4 text-center">
-              <img
-                src="images/tech/infrastructure.jpg"
-                alt="Data Center Infrastructure"
-                className="img-fluid about-image"
-              />
-            </div>
-
+      {/* Left Content */}
+      <div className="col-lg-6 col-md-12 mb-4">
+        <div className="about-content pe-lg-4">
+          <div className="section-head mb-4">
+            <h2 className="fw-bold mb-3">
+              Data Center Infrastructure
+            </h2>
+            <p className="text-muted">
+              In a digital-first world, robust data center infrastructure is critical to business performance. At Pyronics, we design and implement reliable, scalable data center environments that ensure uninterrupted operations, enhanced security, and long-term efficiency. From core hardware to intelligent monitoring, our integrated solutions are built to support evolving enterprise demands.
+              <br /><br />
+              Whether establishing a new facility or modernizing an existing one, Pyronics delivers optimized infrastructure designed for performance, resilience, and sustainable growth.
+            </p>
           </div>
+
+          <a href="/contact" className="site-button">
+            Read More
+          </a>
         </div>
       </div>
 
-      {/* ================= SERVICES SECTION ================= */}
-      <section className="services-core-section">
-        <div className="container">
-          <div className="row g-4">
+      {/* Right Image */}
+      <div className="col-lg-6 col-md-12 mb-4 text-center">
+        <div className="about-image">
+          <img
+            src="images/tech/infrastructure.jpg"
+            className="img-fluid rounded shadow"
+            alt="Data Center Infrastructure"
+          />
+        </div>
+      </div>
 
-            {/* Card 1 */}
-            <div className="col-lg-4 col-md-6">
-              <div className="services-card">
-                <span className="number">01</span>
-                <i className="fa-solid fa-server icon"></i>
-                <h4>High-Performance Servers</h4>
-                <p>
-                  Enterprise-grade servers engineered for fast data processing,
-                  application stability, and reliable computing.
-                </p>
-              </div>
-            </div>
+    </div>
+  </div>
+</section>
+{/* ABOUT ONE SECTION END */}
 
-            {/* Card 2 */}
-            <div className="col-lg-4 col-md-6">
-              <div className="services-card">
-                <span className="number">02</span>
-                <i className="fa-solid fa-database icon"></i>
-                <h4>Scalable Storage Solutions</h4>
-                <p>
-                  Secure and scalable storage systems designed for growing
-                  data demands and dependable backup solutions.
-                </p>
-              </div>
-            </div>
 
-            {/* Card 3 */}
-            <div className="col-lg-4 col-md-6">
-              <div className="services-card">
-                <span className="number">03</span>
-                <i className="fa-solid fa-desktop icon"></i>
-                <h4>High-Performance Workstations</h4>
-                <p>
-                  Powerful workstations optimized for engineers and designers
-                  handling compute-intensive workloads.
-                </p>
-              </div>
-            </div>
+{/* SERVICES CORE SECTION */}
+<section className="services-core-section py-5 bg-light">
+  <div className="container">
+    <div className="row g-4">
 
-            {/* Card 4 */}
-            <div className="col-lg-4 col-md-6">
-              <div className="services-card">
-                <span className="number">04</span>
-                <i className="fa-solid fa-box icon"></i>
-                <h4>Smart Cabinet Solutions</h4>
-                <p>
-                  Integrated smart cabinets with power distribution, cooling,
-                  and remote monitoring capabilities.
-                </p>
-              </div>
-            </div>
+      {[
+        {
+          number: "01",
+          icon: "fa-server",
+          title: "High-Performance Servers",
+          desc: "Enterprise-grade servers engineered for fast data processing, application stability, and reliable computing across mission-critical business operations."
+        },
+        {
+          number: "02",
+          icon: "fa-database",
+          title: "Scalable Storage Solutions",
+          desc: "Secure and scalable storage systems designed for growing data demands, rapid access, and dependable backup and disaster recovery."
+        },
+        {
+          number: "03",
+          icon: "fa-desktop",
+          title: "High-Performance Workstations",
+          desc: "Powerful workstations optimized for engineers and designers handling multitasking and compute-intensive workloads."
+        },
+        {
+          number: "04",
+          icon: "fa-box",
+          title: "Smart Cabinet Solutions",
+          desc: "Integrated smart cabinets with power distribution, cooling, and security for remote monitoring and efficient space utilization."
+        },
+        {
+          number: "05",
+          icon: "fa-battery-full",
+          title: "UPS Backup Systems",
+          desc: "Reliable UPS solutions ensuring uninterrupted power during outages, safeguarding critical systems and maintaining business continuity."
+        },
+        {
+          number: "06",
+          icon: "fa-temperature-high",
+          title: "Precision Cooling & Monitoring",
+          desc: "Advanced cooling, DCIM, intelligent cabling, and environmental monitoring for proactive infrastructure management."
+        }
+      ].map((item, index) => (
+        <div className="col-lg-4 col-md-6" key={index}>
+          <div className="service-card h-100 p-4 text-center shadow-sm bg-white rounded">
+            <span className="service-number d-block mb-2 fw-bold text-primary">
+              {item.number}
+            </span>
 
-            {/* Card 5 */}
-            <div className="col-lg-4 col-md-6">
-              <div className="services-card">
-                <span className="number">05</span>
-                <i className="fa-solid fa-battery-full icon"></i>
-                <h4>UPS Backup Systems</h4>
-                <p>
-                  Reliable UPS systems ensuring uninterrupted power supply
-                  during outages and emergencies.
-                </p>
-              </div>
-            </div>
+            <i className={`fa-solid ${item.icon} fa-2x mb-3 text-dark`} />
 
-            {/* Card 6 */}
-            <div className="col-lg-4 col-md-6">
-              <div className="services-card">
-                <span className="number">06</span>
-                <i className="fa-solid fa-temperature-high icon"></i>
-                <h4>Precision Cooling & Monitoring</h4>
-                <p>
-                  Advanced cooling, DCIM, and environmental monitoring for
-                  optimal infrastructure performance.
-                </p>
-              </div>
-            </div>
+            <h5 className="fw-semibold mb-3">
+              {item.title}
+            </h5>
 
+            <p className="text-muted small mb-0">
+              {item.desc}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
 
-
+    </div>
+  </div>
+</section>
 		</div>
 			{/* FOOTER START */}
         <footer
