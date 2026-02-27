@@ -7,8 +7,8 @@ export default function Home() {
       <div className="cursor" />
       <div className="cursor2" />
       <div className="page-wraper">
-        {/* HEADER START */}
-        <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
+          {/* HEADER START */}
+    <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
           <div className="main-bar-wraper navbar-expand-lg">
             <div className="main-bar">
               <div className="clearfix">
@@ -142,7 +142,7 @@ export default function Home() {
             </div>
           </div>
         </header>
-        {/* HEADER END */}
+    {/* HEADER END */}
         {/* CONTENT START */}
         <div className="page-content">
           <div className="page-breadcrumb">
