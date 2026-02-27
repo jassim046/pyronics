@@ -3108,7 +3108,7 @@ THEMEFOREST REQUIRED CLASSES
     position: relative;
   }
   .header-style-1.mobile-sider-drawer-menu #mobile-side-drawer {
-    min-height: 60px;
+    min-height: 44px;
     position: relative;
     padding-left: 30px;
   }
