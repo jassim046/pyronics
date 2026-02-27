@@ -150,7 +150,7 @@ export default function Home() {
               <h2 className="text-white text-center">Data Center Infrastructure </h2>
             </div>
           </div>
-		</div>
+		
 		  {/* ================= ABOUT SECTION ================= */}
       <div className="section-full about-section-one-wrap">
         <div className="container">
@@ -326,6 +326,7 @@ export default function Home() {
 
   </div>
 </div>
+		</div>
         {/* FOOTER START */}
         <footer
           className="site-footer footer-dark"
