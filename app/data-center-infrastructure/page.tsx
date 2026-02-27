@@ -156,7 +156,7 @@ export default function Home() {
               <div className="row align-items-center">
                 <div className="col-lg-12">
                   <div className="about-text">
-                    <h2 className="title_split text-center">Project Management</h2>
+                    <h2 className="title_split text-center">Data Center Infrastructure </h2>
                     <p>
                       At Pyronics, our Project Management services are designed to deliver projects with precision, control, and
                       uncompromising quality. We follow a structured and disciplined approach to managing every phase of a project — from
