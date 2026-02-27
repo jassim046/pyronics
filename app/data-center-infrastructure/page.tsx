@@ -147,7 +147,7 @@ export default function Home() {
         <div className="page-content">
           <div className="page-breadcrumb">
             <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
-              <h2 className="text-white text-center">Project Management </h2>
+              <h2 className="text-white text-center">Data Center Infrastructure </h2>
             </div>
           </div>
           {/* About Section */}
