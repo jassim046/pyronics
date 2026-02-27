@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Scripts from "@/components/Scripts";
+import Scripts from "../components/Scripts";
 export default function Home() {
   return (
     <>
