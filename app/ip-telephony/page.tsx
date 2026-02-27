@@ -150,6 +150,7 @@ export default function Home() {
               <h2 className="text-white text-center"> IP Telephony</h2>
             </div>
           </div>
+			<span id="yearsExperience">0</span>
           {/* About Section */}
           {/* ABOUT ONE SECTION START */}
           <div className="section-full p-t90  p-b50  about-section-one-wrap">
