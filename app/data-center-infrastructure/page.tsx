@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-    <>
-      {/* Curser Pointer */}
-      <div className="cursor" />
-      <div className="cursor2" />
-      <div className="page-wraper">
-          {/* HEADER START */}
-       <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
+ <>
+  {/* Curser Pointer */}
+  <div className="cursor" />
+  <div className="cursor2" />
+  <div className="page-wraper">
+    {/* HEADER START */}
+    <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
           <div className="main-bar-wraper navbar-expand-lg">
             <div className="main-bar">
               <div className="clearfix">
@@ -143,13 +143,13 @@ export default function Home() {
           </div>
         </header>
     {/* HEADER END */}
-        {/* CONTENT START */}
-        <div className="page-content">
-          <div className="page-breadcrumb">
-            <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
-              <h2 className="text-white text-center">Data Center Infrastructure</h2>
-            </div>
-          </div>
+    {/* CONTENT START */}
+    <div className="page-content">
+      <div className="page-breadcrumb">
+        <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
+          <h2 className="text-white text-center">About Us </h2>
+        </div>
+      </div>
           {/* About Section */}
           {/* ABOUT ONE SECTION START */}
           <div className="section-full p-t90  p-b50  about-section-one-wrap">
