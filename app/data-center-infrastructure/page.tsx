@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 export default function Home() {
   return (
     <>
