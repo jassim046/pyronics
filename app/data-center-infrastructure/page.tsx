@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // This import is required to fix the "Cannot find name Scripts" error
-import Scripts from "../components/Scripts"; 
+import Scripts from "components/Scripts"; 
 
 export default function Home() {
   return (
