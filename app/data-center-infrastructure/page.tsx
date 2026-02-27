@@ -1,20 +1,18 @@
+
 import Image from "next/image";
 import Link from "next/link";
-
 export default function Home() {
   return (
     <>
-      {/* Cursor Pointer */}
+      {/* Curser Pointer */}
       <div className="cursor" />
       <div className="cursor2" />
       <div className="page-wraper">
-
-        {/* HEADER START */}
-        <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
+          {/* HEADER START */}
+       <header className="sticky-header site-header header-style-1 mobile-sider-drawer-menu">
           <div className="main-bar-wraper navbar-expand-lg">
             <div className="main-bar">
               <div className="clearfix">
-
                 {/* Logo */}
                 <div className="logo-header">
                   <div className="logo-header-inner logo-header-one">
@@ -51,24 +49,47 @@ export default function Home() {
                       <Link href="/about">About Us</Link>
                     </li>
 
-                    {/* Technologies Menu with Submenu */}
+                    {/*Technologies Menu with Submenu */}
                     <li className="menu-item-has-children">
                       <Link href="/technologies" className="menu-link-with-arrow">
                         Technologies
                         <i className="fa fa-angle-down submenu-icon" />
                       </Link>
+
                       <ul className="sub-menu">
-                        <li><Link href="/data-center-infrastructure">Data Center Infrastructure</Link></li>
-                        <li><Link href="/cyber-security">Cyber Security</Link></li>
-                        <li><Link href="/networking-solutions">Networking Solutions</Link></li>
-                        <li><Link href="/passive-infrastructure">Passive Infrastructure</Link></li>
-                        <li><Link href="/physical-security">Physical Security</Link></li>
-                        <li><Link href="/audio-video-distribution">Audio / Video Distribution</Link></li>
-                        <li><Link href="/fire-safety">Fire & Safety</Link></li>
-                        <li><Link href="/sound-and-paging">Sound and Paging</Link></li>
-                        <li><Link href="/time-synchronization">Time Synchronization</Link></li>
-                        <li><Link href="/ip-telephony">IP Telephony</Link></li>
-                        <li><Link href="/remote-telemetry-units">Remote Telemetry Units</Link></li>
+                        <li>
+                          <Link href="/data-center-infrastructure">Data Center Infrastructure</Link>
+                        </li>
+                        <li>
+                          <Link href="/cyber-security">Cyber Security</Link>
+                        </li>
+                        <li>
+                          <Link href="/networking-solutions">Networking Solutions</Link>
+                        </li>
+                        <li>
+                          <Link href="/passive-infrastructure">Passive Infrastructure</Link>
+                        </li>
+                        <li>
+                          <Link href="/physical-security">Physical Security</Link>
+                        </li>
+                        <li>
+                          <Link href="/audio-video-distribution">Audio / Video Distribution</Link>
+                        </li>
+                        <li>
+                          <Link href="/fire-safety">Fire & Safety</Link>
+                        </li>
+                        <li>
+                          <Link href="/sound-and-paging">Sound and Paging</Link>
+                        </li>
+                        <li>
+                          <Link href="/time-synchronization">Time Synchronization</Link>
+                        </li>
+                        <li>
+                          <Link href="/ip-telephony">IP Telephony</Link>
+                        </li>
+                        <li>
+                          <Link href="/remote-telemetry-units">Remote Telemetry Units</Link>
+                        </li>
                       </ul>
                     </li>
 
@@ -78,11 +99,20 @@ export default function Home() {
                         Services
                         <i className="fa fa-angle-down submenu-icon" />
                       </Link>
+
                       <ul className="sub-menu">
-                        <li><Link href="/project-management">Project Management</Link></li>
-                        <li><Link href="/solution-planning">Solution Planning</Link></li>
-                        <li><Link href="/installations">Installations</Link></li>
-                        <li><Link href="/support-services">Support Services</Link></li>
+                        <li>
+                          <Link href="/project-management">Project Management</Link>
+                        </li>
+                        <li>
+                          <Link href="/solution-planning">Solution Planning</Link>
+                        </li>
+                        <li>
+                          <Link href="/installations">Installations</Link>
+                        </li>
+                        <li>
+                          <Link href="/support-services">Support Services</Link>
+                        </li>
                       </ul>
                     </li>
 
@@ -109,169 +139,172 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </header>
-        {/* HEADER END */}
-
+    {/* HEADER END */}
         {/* CONTENT START */}
         <div className="page-content">
-
-          {/* Breadcrumb */}
           <div className="page-breadcrumb">
             <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
               <h2 className="text-white text-center">Data Center Infrastructure</h2>
             </div>
           </div>
-
-          {/* Required by custom.js — prevents JS crash on pages without a counter */}
           <span id="yearsExperience" style={{ display: "none" }}>0</span>
+          {/* About Section */}
+          {/* ABOUT ONE SECTION START */}
+          <div className="section-full p-t90  p-b50  about-section-one-wrap">
+            <div className="about-section-one">
+              <div className="container">
+                <div className="section-content">
+                  <div className="row">
+                    <div className="col-lg-6 col-md-12 m-b30 about-max-two-position">
+                      <div className="about-section-two-right">
+                        {/* TITLE START*/}
+                        <div className="section-head left ">
 
-          {/* ====== ABOUT SECTION ====== */}
-          <div className="dci-about-wrap">
-            <div className="container">
-              <div className="row align-items-center">
+                          <h2 className="">
+                            Data Center Infrastructure
+                          </h2>
+                          <p>
+                            In a digital-first world, robust data center infrastructure is critical to business performance. At Pyronics, we design and implement reliable, scalable data center environments that ensure uninterrupted operations, enhanced security, and long-term efficiency. From core hardware to intelligent monitoring, our integrated solutions are built to support evolving enterprise demands.
+                           <br />
+                            Whether establishing a new facility or modernizing an existing one, Pyronics delivers optimized infrastructure designed for performance, resilience, and sustainable growth.{" "}
+                          </p>
+                        </div>
+                        <a href="/contact" className="site-button">
+                          Read More
+                        </a>
+                      </div>
 
-                <div className="col-lg-6 col-md-12">
-                  <div className="dci-about-text">
-                    <h2 className="dci-about-title">Data Center Infrastructure</h2>
-                    <p className="dci-about-desc">
-                      In a digital-first world, robust data center infrastructure is critical to business performance.
-                      At Pyronics, we design and implement reliable, scalable data center environments that ensure
-                      uninterrupted operations, enhanced security, and long-term efficiency. From core hardware to
-                      intelligent monitoring, our integrated solutions are built to support evolving enterprise demands.
-                    </p>
-                    <p className="dci-about-desc">
-                      Whether establishing a new facility or modernizing an existing one, Pyronics delivers optimized
-                      infrastructure designed for performance, resilience, and sustainable growth.
-                    </p>
-                    <a href="/contact" className="site-button dci-btn">Read More</a>
+                    </div>
+                    <div className="col-lg-6 col-md-12 m-b30">
+                      <div className="about-us-img">
+                        <img
+                          src="images/tech/infrastructure.jpg"
+                          className="img-fluid"
+                          alt="About Image"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div className="col-lg-6 col-md-12">
-                  <div className="dci-about-img-wrap">
-                    <img
-                      src="images/tech/infrastructure.jpg"
-                      className="img-fluid dci-about-img"
-                      alt="Data Center Infrastructure"
-                    />
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>
-          {/* ====== ABOUT SECTION END ====== */}
+          {/* ABOUT ONE SECTION END */}
+         <section className="services-core-section">
+  <div className="services-core-container">
 
-          {/* ====== SERVICE CARDS SECTION ====== */}
-          <div className="dci-cards-wrap">
-            <div className="container">
-              <div className="dci-cards-grid">
+    <div className="services-core-grid">
+      <div className="services-core-item">
+        <span className="services-core-number">01</span>
+        <i className="services-core-icon fa-solid fa-server" />
+        <h4>High-Performance Servers</h4>
+        <p>
+          Enterprise-grade servers engineered for fast data processing,
+          application stability, and reliable computing across mission-critical
+          business operations.
+        </p>
+      </div>
 
-                {/* Card 1 */}
-                <div className="dci-card">
-                  <div className="dci-card-top">
-                    <i className="dci-card-icon fa-solid fa-server" />
-                    <span className="dci-card-number">01</span>
-                  </div>
-                  <h4 className="dci-card-title">High-Performance Servers</h4>
-                  <p className="dci-card-desc">
-                    Enterprise-grade servers engineered for fast data processing, application stability,
-                    and reliable computing across mission-critical business operations.
-                  </p>
-                  <span className="dci-card-corner" />
-                </div>
+      <div className="services-core-item">
+        <span className="services-core-number">02</span>
+        <i className="services-core-icon fa-solid fa-database" />
+        <h4>Scalable Storage Solutions</h4>
+        <p>
+          Secure and scalable storage systems designed for growing data demands,
+          rapid access, and dependable backup and disaster recovery.
+        </p>
+      </div>
 
-                {/* Card 2 */}
-                <div className="dci-card">
-                  <div className="dci-card-top">
-                    <i className="dci-card-icon fa-solid fa-database" />
-                    <span className="dci-card-number">02</span>
-                  </div>
-                  <h4 className="dci-card-title">Scalable Storage Solutions</h4>
-                  <p className="dci-card-desc">
-                    Secure and scalable storage systems designed for growing data demands, rapid access,
-                    and dependable backup and disaster recovery.
-                  </p>
-                  <span className="dci-card-corner" />
-                </div>
+      <div className="services-core-item">
+        <span className="services-core-number">03</span>
+        <i className="services-core-icon fa-solid fa-desktop" />
+        <h4>High-Performance Workstations</h4>
+        <p>
+          Powerful workstations optimized for engineers and designers handling
+          multitasking, visualization, and compute-intensive workloads.
+        </p>
+      </div>
 
-                {/* Card 3 */}
-                <div className="dci-card">
-                  <div className="dci-card-top">
-                    <i className="dci-card-icon fa-solid fa-desktop" />
-                    <span className="dci-card-number">03</span>
-                  </div>
-                  <h4 className="dci-card-title">High-Performance Workstations</h4>
-                  <p className="dci-card-desc">
-                    Powerful workstations optimized for engineers and designers handling multitasking,
-                    visualization, and compute-intensive workloads.
-                  </p>
-                  <span className="dci-card-corner" />
-                </div>
+      <div className="services-core-item">
+        <span className="services-core-number">04</span>
+        <i className="services-core-icon fa-solid fa-box" />
+        <h4>Smart Cabinet Solutions</h4>
+        <p>
+          Integrated smart cabinets with power distribution, cooling, and
+          security, enabling remote monitoring and efficient space utilization.
+        </p>
+      </div>
 
-                {/* Card 4 */}
-                <div className="dci-card">
-                  <div className="dci-card-top">
-                    <i className="dci-card-icon fa-solid fa-box" />
-                    <span className="dci-card-number">04</span>
-                  </div>
-                  <h4 className="dci-card-title">Smart Cabinet Solutions</h4>
-                  <p className="dci-card-desc">
-                    Integrated smart cabinets with power distribution, cooling, and security, enabling
-                    remote monitoring and efficient space utilization.
-                  </p>
-                  <span className="dci-card-corner" />
-                </div>
+      <div className="services-core-item">
+        <span className="services-core-number">05</span>
+        <i className="services-core-icon fa-solid fa-battery-full" />
+        <h4>UPS Backup Systems</h4>
+        <p>
+          Reliable UPS solutions ensuring uninterrupted power during outages,
+          safeguarding critical systems and maintaining business continuity.
+        </p>
+      </div>
 
-                {/* Card 5 */}
-                <div className="dci-card">
-                  <div className="dci-card-top">
-                    <i className="dci-card-icon fa-solid fa-battery-full" />
-                    <span className="dci-card-number">05</span>
-                  </div>
-                  <h4 className="dci-card-title">UPS Backup Systems</h4>
-                  <p className="dci-card-desc">
-                    Reliable UPS solutions ensuring uninterrupted power during outages, safeguarding
-                    critical systems and maintaining business continuity.
-                  </p>
-                  <span className="dci-card-corner" />
-                </div>
+      <div className="services-core-item">
+        <span className="services-core-number">06</span>
+        <i className="services-core-icon fa-solid fa-temperature-high" />
+        <h4>Precision Cooling & Monitoring</h4>
+        <p>
+          Advanced precision cooling, DCIM, intelligent cabling, and environmental
+          monitoring for optimal temperature, humidity control, and proactive
+          infrastructure management.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                {/* Card 6 */}
-                <div className="dci-card">
-                  <div className="dci-card-top">
-                    <i className="dci-card-icon fa-solid fa-temperature-high" />
-                    <span className="dci-card-number">06</span>
-                  </div>
-                  <h4 className="dci-card-title">Precision Cooling & Monitoring</h4>
-                  <p className="dci-card-desc">
-                    Advanced precision cooling, DCIM, intelligent cabling, and environmental monitoring
-                    for optimal temperature, humidity control, and proactive infrastructure management.
-                  </p>
-                  <span className="dci-card-corner" />
-                </div>
 
+          {/* Design Capabilities Section 
+    <div class="capabilities-section">
+  <div class="container">
+      <h2 class="section-title">Design Capabilities</h2>
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="card border-0 shadow">
+                  <div class="card-body p-4">
+                      <div class="d-flex mb-3 align-items-start">
+                          <div class="icon-box flex-shrink-0">
+                              <span>📐</span>
+                          </div>
+                          <div class="ms-3">
+                              <h4 class="text-left fw-bold">Complete Design Services</h4>
+                              <p class="mb-0">Sinmar Fire & Security has the capability to use client requirements and specifications as a basis to carry out full design and produce detailed working drawings using the latest computer-aided design software.</p>
+                          </div>
+                      </div>
+                  
+						
+							<h3 class="text-center fw-bold">We provide all types of smoke detection requirements</h3>
+							<img src="images/services/serveimg.jpg" alt="" class="img-fluid">
+						</div>
               </div>
-            </div>
           </div>
-          {/* ====== SERVICE CARDS SECTION END ====== */}
+      </div>
+  </div>
+    </div>
 
+
+      {/* CLIENT LOGO  SECTION End */}
         </div>
         {/* CONTENT END */}
-
         {/* FOOTER START */}
         <footer
           className="site-footer footer-dark"
           style={{ backgroundImage: 'url("images/background/count-bg.jpg")' }}
         >
+          {/* FOOTER BLOCKES START */}
           <div className="footer-top">
             <div className="container">
               <div className="row">
-
                 <div className="col-lg-4 col-md-12">
                   <div className="widget widget_about">
                     <div className="logo-footer clearfix">
@@ -280,20 +313,41 @@ export default function Home() {
                       </a>
                     </div>
                     <ul className="social-icons">
-                      <li><a href="https://www.x.com/"><i className="bi bi-twitter-x cursor-scale small" /></a></li>
-                      <li><a href="https://www.facebook.com/"><i className="bi bi-facebook cursor-scale small" /></a></li>
-                      <li><a href="https://www.instagram.com/"><i className="bi bi-instagram cursor-scale small" /></a></li>
-                      <li><a href="https://www.pinterest.com/"><i className="bi bi-pinterest cursor-scale small" /></a></li>
+                      <li>
+                        <a href="https://www.x.com/">
+                          <i className="bi bi-twitter-x cursor-scale small" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/">
+                          <i className="bi bi-facebook cursor-scale small" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/">
+                          <i className="bi bi-instagram cursor-scale small" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.pinterest.com/">
+                          <i className="bi bi-pinterest cursor-scale small" />
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>
-
                 <div className="col-lg-4 col-md-6">
                   <div className="widget f-top-space">
                     <h3 className="widget-title">Contact Us</h3>
                     <ul className="widget_address">
-                      <li><i className="bi bi-telephone" />00966 (01) 474 4411</li>
-                      <li><i className="bi bi-printer" />00966 (01) 472 5295</li>
+                      <li>
+                        <i className="bi bi-telephone" />
+                        00966 (01) 474 4411
+                      </li>
+                      <li>
+                        <i className="bi bi-printer" />
+                        00966 (01) 472 5295
+                      </li>
                       <li>
                         <i className="bi bi-envelope" />
                         <a href="mailto:info@pyronics.co.uk">info@pyronics.co.uk</a>
@@ -301,30 +355,47 @@ export default function Home() {
                       <li>
                         <i className="bi bi-map" />
                         <strong>Pyronics Engineering Solutions</strong>
-                        <br />P. O. Box 271578,<br /> Riyadh 11352, KSA
+                        <br />
+                        P. O. Box 271578,
+                        <br /> Riyadh 11352, KSA
                       </li>
                     </ul>
                   </div>
                 </div>
-
                 <div className="col-lg-4 col-md-6">
                   <div className="widget f-top-space recent-posts-entry">
                     <h3 className="widget-title">Quick Links</h3>
                     <ul className="widget_address newlinks">
-                      <li><i className="bi bi-square" /><a href="/">Home</a></li>
-                      <li><i className="bi bi-square" /><a href="/about">About us</a></li>
-                      <li><i className="bi bi-square" /><a href="/services">Services</a></li>
-                      <li><i className="bi bi-square" /><a href="/technologies">Technologies</a></li>
-                      <li><i className="bi bi-square" /><a href="/projects">Projects</a></li>
-                      <li><i className="bi bi-square" /><a href="/contact">Contact</a></li>
+                      <li>
+                        <i className="bi bi-square" />
+                        <a href="/">Home</a>
+                      </li>
+                      <li>
+                        <i className="bi bi-square" />
+                        <a href="/about">About us </a>
+                      </li>
+                      <li>
+                        <i className="bi bi-square" />
+                        <a href="/services">Services</a>
+                      </li>
+                       <li>
+                        <i className="bi bi-square" />
+                        <a href="/technologies">Technologies</a>
+                      </li>
+                      <li>
+                        <i className="bi bi-square" />
+                        <a href="/projects">Projects </a>
+                      </li>
+                      <li>
+                        <i className="bi bi-square" />
+                        <a href="/contact">Contact</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
-
           {/* FOOTER COPYRIGHT */}
           <div className="footer-bottom">
             <div className="container">
@@ -332,8 +403,13 @@ export default function Home() {
                 <div className="footer-bottom-info">
                   <div className="wt-footer-bot-left">
                     <span className="copyrights-text">
-                      Copyright © 2026 All Rights Reserved by Pyronics Engineering Solutions. Powered by{" "}
-                      <a href="https://affinityopus.com" className="text-white" target="_blank">
+                      Copyright © 2026 All Rights Reserved by Pyronics Engineering
+                      Solutions. Powered by{" "}
+                      <a
+                        href="https://affinityopus.com"
+                        className="text-white"
+                        target="_blank"
+                      >
                         Affinity Interactive
                       </a>
                     </span>
@@ -344,31 +420,32 @@ export default function Home() {
           </div>
         </footer>
         {/* FOOTER END */}
-
-        {/* SCROLL TO TOP */}
+        {/* BUTTON TOP START */}
         <button className="scroltop">
-          <span className="fa fa-angle-up relative" id="btn-vibrate" />
+          <span className="fa fa-angle-up  relative" id="btn-vibrate" />
         </button>
-
       </div>
-
-      {/* JAVASCRIPT FILES */}
+		
+      {/* JAVASCRIPT  FILES ========================================= */}
       {/* JQUERY.MIN JS */}
       {/* POPPER.MIN JS */}
       {/* BOOTSTRAP.MIN JS */}
       {/* MAGNIFIC-POPUP JS */}
       {/* WAYPOINTS JS */}
       {/* COUNTERUP JS */}
-      {/* MASONRY */}
-      {/* OWL SLIDER */}
-      {/* STICKY SIDEBAR */}
+      {/* MASONRY  */}
+      {/* MASONRY  */}
+      {/* OWL  SLIDER  */}
+      {/* STICKY SIDEBAR  */}
       {/* FORM JS */}
       {/* IMAGE POPUP */}
+      {/* Form js */}
       {/* Swiper JS */}
       {/* WOW ANIMATION JS */}
       {/* Title animation Js */}
       {/* cursor */}
-      {/* CUSTOM FUCTIONS */}
+      {/* CUSTOM FUCTIONS  */}
     </>
+
   );
 }
