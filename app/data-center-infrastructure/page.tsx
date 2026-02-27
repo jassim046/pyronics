@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 export default function Home() {
   return (
     <>
@@ -27,22 +26,21 @@ export default function Home() {
                 </div>
 
                 {/* Mobile Toggle Button */}
-                <button
-                  id="mobile-side-drawer"
-                  data-target=".header-nav"
-                  data-toggle="collapse"
-                  type="button"
-                  className="navbar-toggler collapsed"
-                >
-                  <span className="sr-only">Toggle navigation</span>
-                  <span className="icon-bar icon-bar-first" />
-                  <span className="icon-bar icon-bar-two" />
-                  <span className="icon-bar icon-bar-three" />
-                </button>
+               <button
+  id="mobile-side-drawer"
+  data-target=".header-nav"
+  data-toggle="collapse"
+  type="button"
+  className="navbar-toggler collapsed"
+>
+  <span className="sr-only">Toggle navigation</span>
+  <span className="icon-bar icon-bar-first" />
+  <span className="icon-bar icon-bar-two" />
+  <span className="icon-bar icon-bar-three" />
+</button>
 
-                {/* Navigation */}
-                <div className="header-nav">
-                  <ul className="nav navbar-nav main-menu">
+<div className="header-nav collapse navbar-collapse justify-content-center">
+  <ul className="nav navbar-nav main-menu">
 
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About Us</Link></li>
