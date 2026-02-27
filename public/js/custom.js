@@ -658,7 +658,11 @@ function slider_home_two(){
 
     const startYear = 1993;
     const currentYear = new Date().getFullYear();
-    document.getElementById("yearsExperience").textContent = currentYear - startYear;
+    const yearEl = document.getElementById("yearsExperience");
+
+if (yearEl) {
+  yearEl.textContent = years;
+}
 
 
 //-------- ACDion Function ------------//
