@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+// Use @ to avoid path errors during Vercel build
+import Scripts from "@/components/Scripts"; 
 
-export default function DataCenterInfrastructure() {
+export default function Home() {
   return (
     <>
       {/* Curser Pointer */}
@@ -42,7 +44,6 @@ export default function DataCenterInfrastructure() {
                   <ul className="nav navbar-nav main-menu">
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About Us</Link></li>
-
                     <li className="menu-item-has-children">
                       <Link href="/technologies" className="menu-link-with-arrow">
                         Technologies <i className="fa fa-angle-down submenu-icon" />
@@ -61,7 +62,6 @@ export default function DataCenterInfrastructure() {
                         <li><Link href="/remote-telemetry-units">Remote Telemetry Units</Link></li>
                       </ul>
                     </li>
-
                     <li className="menu-item-has-children">
                       <Link href="/services" className="menu-link-with-arrow">
                         Services <i className="fa fa-angle-down submenu-icon" />
@@ -73,13 +73,11 @@ export default function DataCenterInfrastructure() {
                         <li><Link href="/support-services">Support Services</Link></li>
                       </ul>
                     </li>
-
                     <li><Link href="/projects">Projects</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
                   </ul>
                 </div>
 
-                {/* Header Right */}
                 <div className="extra-nav header-1-nav">
                   <div className="extra-cell two h-cart-block">
                     <a className="wt-cart cart-btn d-sms-none navSidebar-button">
@@ -99,6 +97,7 @@ export default function DataCenterInfrastructure() {
 
         {/* CONTENT START */}
         <div className="page-content">
+          {/* Breadcrumb Section */}
           <div className="page-breadcrumb">
             <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
               <h2 className="text-white text-center">Data Center Infrastructure</h2>
@@ -111,13 +110,13 @@ export default function DataCenterInfrastructure() {
               <div className="container">
                 <div className="section-content">
                   <div className="row">
-                    <div className="col-lg-6 col-md-12 m-b30 about-max-two-position">
+                    <div className="col-lg-6 col-md-12 m-b30">
                       <div className="about-section-two-right">
                         <div className="section-head left">
                           <h2>Data Center Infrastructure</h2>
                           <p>
                             In a digital-first world, robust data center infrastructure is critical to business performance. At Pyronics, we design and implement reliable, scalable data center environments that ensure uninterrupted operations, enhanced security, and long-term efficiency. From core hardware to intelligent monitoring, our integrated solutions are built to support evolving enterprise demands.
-                            <br />
+                            <br /><br />
                             Whether establishing a new facility or modernizing an existing one, Pyronics delivers optimized infrastructure designed for performance, resilience, and sustainable growth.
                           </p>
                         </div>
@@ -131,7 +130,7 @@ export default function DataCenterInfrastructure() {
                         <img
                           src="images/tech/infrastructure.jpg"
                           className="img-fluid"
-                          alt="Data Center"
+                          alt="About Image"
                         />
                       </div>
                     </div>
@@ -141,46 +140,56 @@ export default function DataCenterInfrastructure() {
             </div>
           </div>
 
-          {/* Core Grid Section */}
-          <section className="services-core-section">
-            <div className="services-core-container">
-              <div className="services-core-grid">
-                <div className="services-core-item">
+          {/* Services Core Grid */}
+          <section className="services-core-section p-b60">
+            <div className="services-core-container container">
+              <div className="services-core-grid row">
+                
+                <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">01</span>
                   <i className="services-core-icon fa-solid fa-server" />
                   <h4>High-Performance Servers</h4>
-                  <p>Enterprise-grade servers engineered for fast data processing, application stability, and reliable computing across mission-critical business operations.</p>
+                  <p>Enterprise-grade servers engineered for fast data processing and application stability.</p>
                 </div>
-                <div className="services-core-item">
+
+                <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">02</span>
                   <i className="services-core-icon fa-solid fa-database" />
                   <h4>Scalable Storage Solutions</h4>
-                  <p>Secure and scalable storage systems designed for growing data demands, rapid access, and dependable backup and disaster recovery.</p>
+                  <p>Secure systems designed for growing data demands and dependable backup recovery.</p>
                 </div>
-                <div className="services-core-item">
+
+                <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">03</span>
                   <i className="services-core-icon fa-solid fa-desktop" />
                   <h4>High-Performance Workstations</h4>
-                  <p>Powerful workstations optimized for engineers and designers handling multitasking, visualization, and compute-intensive workloads.</p>
+                  <p>Powerful workstations optimized for compute-intensive workloads.</p>
                 </div>
-                <div className="services-core-item">
+
+                <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">04</span>
-                  <i className="services-core-icon fa-solid fa-box" />
+                  <i className="services-core-item">
+                    <span className="services-core-number">04</span>
+                    <i className="services-core-icon fa-solid fa-box" />
+                  </i>
                   <h4>Smart Cabinet Solutions</h4>
-                  <p>Integrated smart cabinets with power distribution, cooling, and security, enabling remote monitoring and efficient space utilization.</p>
+                  <p>Integrated cabinets with power distribution and remote monitoring.</p>
                 </div>
-                <div className="services-core-item">
+
+                <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">05</span>
                   <i className="services-core-icon fa-solid fa-battery-full" />
                   <h4>UPS Backup Systems</h4>
-                  <p>Reliable UPS solutions ensuring uninterrupted power during outages, safeguarding critical systems and maintaining business continuity.</p>
+                  <p>Reliable UPS solutions ensuring uninterrupted power during outages.</p>
                 </div>
-                <div className="services-core-item">
+
+                <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">06</span>
                   <i className="services-core-icon fa-solid fa-temperature-high" />
                   <h4>Precision Cooling & Monitoring</h4>
-                  <p>Advanced precision cooling, DCIM, intelligent cabling, and environmental monitoring for optimal temperature, humidity control, and proactive infrastructure management.</p>
+                  <p>Advanced cooling and DCIM for proactive infrastructure management.</p>
                 </div>
+
               </div>
             </div>
           </section>
@@ -201,7 +210,6 @@ export default function DataCenterInfrastructure() {
                       <li><a href="#"><i className="bi bi-twitter-x" /></a></li>
                       <li><a href="#"><i className="bi bi-facebook" /></a></li>
                       <li><a href="#"><i className="bi bi-instagram" /></a></li>
-                      <li><a href="#"><i className="bi bi-pinterest" /></a></li>
                     </ul>
                   </div>
                 </div>
@@ -211,7 +219,7 @@ export default function DataCenterInfrastructure() {
                     <ul className="widget_address">
                       <li><i className="bi bi-telephone" /> 00966 (01) 474 4411</li>
                       <li><i className="bi bi-envelope" /> <a href="mailto:info@pyronics.co.uk">info@pyronics.co.uk</a></li>
-                      <li><i className="bi bi-map" /> <strong>Pyronics Engineering Solutions</strong><br /> Riyadh 11352, KSA</li>
+                      <li><i className="bi bi-map" /> <strong>Pyronics Engineering</strong><br /> Riyadh 11352, KSA</li>
                     </ul>
                   </div>
                 </div>
@@ -222,8 +230,6 @@ export default function DataCenterInfrastructure() {
                       <li><Link href="/">Home</Link></li>
                       <li><Link href="/about">About us</Link></li>
                       <li><Link href="/services">Services</Link></li>
-                      <li><Link href="/technologies">Technologies</Link></li>
-                      <li><Link href="/projects">Projects</Link></li>
                       <li><Link href="/contact">Contact</Link></li>
                     </ul>
                   </div>
@@ -232,10 +238,8 @@ export default function DataCenterInfrastructure() {
             </div>
           </div>
           <div className="footer-bottom">
-            <div className="container">
-              <div className="wt-footer-bot-left text-center">
-                <span className="copyrights-text">Copyright © 2026 All Rights Reserved by Pyronics Engineering Solutions.</span>
-              </div>
+            <div className="container text-center">
+              <span className="copyrights-text">Copyright © 2026 Pyronics Engineering Solutions.</span>
             </div>
           </div>
         </footer>
@@ -246,7 +250,7 @@ export default function DataCenterInfrastructure() {
         </button>
       </div>
 
-      {/* CRITICAL: This enables the mobile menu functionality */}
+      {/* CRITICAL: This component makes the hamburger work */}
       <Scripts />
     </>
   );
