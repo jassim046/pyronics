@@ -292,7 +292,7 @@ export default function Home() {
 
 
       {/* CLIENT LOGO  SECTION End */}
-        
+         </div>
     {/* CONTENT END */}
     {/* FOOTER START */}
     <footer
