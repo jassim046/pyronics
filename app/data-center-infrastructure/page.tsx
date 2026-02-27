@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-// Use @ to avoid path errors during Vercel build
-import Scripts from "@/components/Scripts"; 
 
 export default function Home() {
   return (
