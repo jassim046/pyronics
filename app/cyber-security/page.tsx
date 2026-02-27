@@ -150,7 +150,10 @@ export default function Home() {
               <h2 className="text-white text-center">Cyber Security</h2>
             </div>
           </div>
-          {/* About Section */}
+			
+			{/* Prevent custom.js crash */}
+          <span id="yearsExperience" style={{ display: "none" }}>0</span>
+         
           {/* ABOUT ONE SECTION START */}
           <div className="section-full p-t90  p-b50  about-section-one-wrap">
             <div className="about-section-one">
