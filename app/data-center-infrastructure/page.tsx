@@ -278,6 +278,54 @@ export default function Home() {
           </div>
         </div>
       </section>
+		  {/* ================= Design Capabilities Section ================= */}
+<div className="capabilities-section">
+  <div className="container">
+
+    <h2 className="section-title text-center mb-5">
+      Design Capabilities
+    </h2>
+
+    <div className="row justify-content-center">
+      <div className="col-lg-10">
+        <div className="capabilities-card">
+
+          <div className="d-flex align-items-start mb-4">
+            <div className="icon-box">
+              <span>📐</span>
+            </div>
+
+            <div className="ms-3">
+              <h4 className="fw-bold mb-2">
+                Complete Design Services
+              </h4>
+              <p className="mb-0">
+                Sinmar Fire & Security has the capability to use client
+                requirements and specifications as a basis to carry out
+                full design and produce detailed working drawings using
+                the latest computer-aided design software.
+              </p>
+            </div>
+          </div>
+
+          <h5 className="text-center fw-bold mt-4 mb-4">
+            We provide all types of smoke detection requirements
+          </h5>
+
+          <div className="text-center">
+            <img
+              src="images/services/serveimg.jpg"
+              alt="Design Services"
+              className="img-fluid capabilities-image"
+            />
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
         {/* FOOTER START */}
         <footer
           className="site-footer footer-dark"
