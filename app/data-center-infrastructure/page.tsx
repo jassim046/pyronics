@@ -169,9 +169,7 @@ export default function Home() {
                             Whether establishing a new facility or modernizing an existing one, Pyronics delivers optimized infrastructure designed for performance, resilience, and sustainable growth.{" "}
                           </p>
                         </div>
-                        <a href="/contact" className="site-button">
-                          Read More
-                        </a>
+                       
                       </div>
 
                     </div>
