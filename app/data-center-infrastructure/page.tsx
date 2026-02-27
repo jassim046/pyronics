@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-// Import Scripts component - adjust path if necessary (e.g., "@/components/Scripts")
-import Scripts from "../components/Scripts"; 
 
 export default function DataCenterInfrastructure() {
   return (
