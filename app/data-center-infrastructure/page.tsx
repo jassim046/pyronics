@@ -151,7 +151,9 @@ export default function Home() {
               <h2 className="text-white text-center">Data Center Infrastructure</h2>
             </div>
           </div>
+			{/* Prevent custom.js crash */}
           <span id="yearsExperience" style={{ display: "none" }}>0</span>
+			
           {/* About Section */}
           {/* ABOUT ONE SECTION START */}
           <div className="section-full p-t90  p-b50  about-section-one-wrap">
