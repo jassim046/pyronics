@@ -292,78 +292,78 @@ export default function Home() {
 
 
       {/* CLIENT LOGO  SECTION End */}
-        </div>
-        {/* CONTENT END */}
-        {/* FOOTER START */}
-        <footer
-          className="site-footer footer-dark"
-          style={{ backgroundImage: 'url("images/background/count-bg.jpg")' }}
-        >
-          {/* FOOTER BLOCKES START */}
-          <div className="footer-top">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-4 col-md-12">
-                  <div className="widget widget_about">
-                    <div className="logo-footer clearfix">
-                      <a href="index.html">
-                        <img src="images/logo-dark.png" alt="" />
-                      </a>
-                    </div>
-                    <ul className="social-icons">
-                      <li>
-                        <a href="https://www.x.com/">
-                          <i className="bi bi-twitter-x cursor-scale small" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.facebook.com/">
-                          <i className="bi bi-facebook cursor-scale small" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bi bi-instagram cursor-scale small" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.pinterest.com/">
-                          <i className="bi bi-pinterest cursor-scale small" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+         </div>
+    {/* CONTENT END */}
+    {/* FOOTER START */}
+    <footer
+      className="site-footer footer-dark"
+      style={{ backgroundImage: 'url("images/background/count-bg.jpg")' }}
+    >
+      {/* FOOTER BLOCKES START */}
+      <div className="footer-top">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-12">
+              <div className="widget widget_about">
+                <div className="logo-footer clearfix">
+                  <a href="index.html">
+                    <img src="images/logo-dark.png" alt="" />
+                  </a>
                 </div>
-                <div className="col-lg-4 col-md-6">
-                  <div className="widget f-top-space">
-                    <h3 className="widget-title">Contact Us</h3>
-                    <ul className="widget_address">
-                      <li>
-                        <i className="bi bi-telephone" />
-                        00966 (01) 474 4411
-                      </li>
-                      <li>
-                        <i className="bi bi-printer" />
-                        00966 (01) 472 5295
-                      </li>
-                      <li>
-                        <i className="bi bi-envelope" />
-                        <a href="mailto:info@pyronics.co.uk">info@pyronics.co.uk</a>
-                      </li>
-                      <li>
-                        <i className="bi bi-map" />
-                        <strong>Pyronics Engineering Solutions</strong>
-                        <br />
-                        P. O. Box 271578,
-                        <br /> Riyadh 11352, KSA
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6">
-                  <div className="widget f-top-space recent-posts-entry">
-                    <h3 className="widget-title">Quick Links</h3>
-                    <ul className="widget_address newlinks">
+                <ul className="social-icons">
+                  <li>
+                    <a href="https://www.x.com/">
+                      <i className="bi bi-twitter-x cursor-scale small" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/">
+                      <i className="bi bi-facebook cursor-scale small" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/">
+                      <i className="bi bi-instagram cursor-scale small" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.pinterest.com/">
+                      <i className="bi bi-pinterest cursor-scale small" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="widget f-top-space">
+                <h3 className="widget-title">Contact Us</h3>
+                <ul className="widget_address">
+                  <li>
+                    <i className="bi bi-telephone" />
+                    00966 (01) 474 4411
+                  </li>
+                  <li>
+                    <i className="bi bi-printer" />
+                    00966 (01) 472 5295
+                  </li>
+                  <li>
+                    <i className="bi bi-envelope" />
+                    <a href="mailto:info@pyronics.co.uk">info@pyronics.co.uk</a>
+                  </li>
+                  <li>
+                    <i className="bi bi-map" />
+                    <strong>Pyronics Engineering Solutions</strong>
+                    <br />
+                    P. O. Box 271578,
+                    <br /> Riyadh 11352, KSA
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="widget f-top-space recent-posts-entry">
+                <h3 className="widget-title">Quick Links</h3>
+                 <ul className="widget_address newlinks">
                       <li>
                         <i className="bi bi-square" />
                         <a href="/">Home</a>
@@ -389,61 +389,73 @@ export default function Home() {
                         <a href="/contact">Contact</a>
                       </li>
                     </ul>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-          {/* FOOTER COPYRIGHT */}
-          <div className="footer-bottom">
-            <div className="container">
-              <div className="container">
-                <div className="footer-bottom-info">
-                  <div className="wt-footer-bot-left">
-                    <span className="copyrights-text">
-                      Copyright © 2026 All Rights Reserved by Pyronics Engineering
-                      Solutions. Powered by{" "}
-                      <a
-                        href="https://affinityopus.com"
-                        className="text-white"
-                        target="_blank"
-                      >
-                        Affinity Interactive
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-        {/* FOOTER END */}
-        {/* BUTTON TOP START */}
-        <button className="scroltop">
-          <span className="fa fa-angle-up  relative" id="btn-vibrate" />
-        </button>
+        </div>
       </div>
-		
-      {/* JAVASCRIPT  FILES ========================================= */}
-      {/* JQUERY.MIN JS */}
-      {/* POPPER.MIN JS */}
-      {/* BOOTSTRAP.MIN JS */}
-      {/* MAGNIFIC-POPUP JS */}
-      {/* WAYPOINTS JS */}
-      {/* COUNTERUP JS */}
-      {/* MASONRY  */}
-      {/* MASONRY  */}
-      {/* OWL  SLIDER  */}
-      {/* STICKY SIDEBAR  */}
-      {/* FORM JS */}
-      {/* IMAGE POPUP */}
-      {/* Form js */}
-      {/* Swiper JS */}
-      {/* WOW ANIMATION JS */}
-      {/* Title animation Js */}
-      {/* cursor */}
-      {/* CUSTOM FUCTIONS  */}
-    </>
+      {/* FOOTER COPYRIGHT */}
+      <div className="footer-bottom">
+        <div className="container">
+          <div className="container">
+            <div className="footer-bottom-info">
+              <div className="wt-footer-bot-left">
+                <span className="copyrights-text">
+                  Copyright © 2026 All Rights Reserved by Pyronics Engineering
+                  Solutions. Powered by{" "}
+                  <a
+                    href="https://affinityopus.com"
+                    className="text-white"
+                    target="_blank"
+                  >
+                    Affinity Interactive
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {/* FOOTER END */}
+    {/* BUTTON TOP START */}
+    <button className="scroltop">
+      <span className="fa fa-angle-up  relative" id="btn-vibrate" />
+    </button>
+  </div>
+  <style
+    dangerouslySetInnerHTML={{
+      __html: "\n#yearsExperience{\n    display:none;\n}\n"
+    }}
+  />
+  <style
+    dangerouslySetInnerHTML={{
+      __html:
+        '\n    .expertise-capabilities {\n      padding: 60px 0;\n      background: #f9fafb;\n    }\n\n    .section-header h2 {\n      font-size: 28px;\n      font-weight: 700;\n      margin-bottom: 8px;\n      color: #1f2937;\n    }\n\n    .section-header p {\n      color: #6b7280;\n      margin-bottom: 40px;\n    }\n\n    /* Timeline Structure */\n    .timeline {\n      position: relative;\n      padding: 0;\n      list-style: none;\n    }\n\n    /* Timeline Line */\n    .timeline::before {\n      content: "";\n      position: absolute;\n      top: 0;\n      bottom: 0;\n      left: 28px;\n      width: 3px;\n      background: #d1d5db;\n    }\n\n    /* Desktop: Horizontal Line */\n    @media (min-width: 992px) {\n      .timeline::before {\n        top: 28px;\n        left: 0;\n        right: 0;\n        width: 100%;\n        height: 3px;\n        bottom: auto;\n      }\n    }\n\n    /* Timeline Item */\n    .timeline-item {\n      position: relative;\n      margin-bottom: 30px;\n      padding-left: 70px;\n    }\n\n    @media (min-width: 992px) {\n      .timeline-item {\n        padding-left: 0;\n        margin-bottom: 0;\n      }\n    }\n\n    /* Timeline Icon */\n    .timeline-icon {\n      position: absolute;\n      left: 0;\n      top: 0;\n      width: 56px;\n      height: 56px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background: linear-gradient(\n163deg, #e6474b 0%, #e1252a 100%);\n      color: #fff;\n      border-radius: 50%;\n      font-size: 26px;\n      z-index: 2;\n      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);\n    }\n\n    @media (min-width: 992px) {\n      .timeline-icon {\n        left: 50%;\n        transform: translateX(-50%);\n        top: -56px;\n    }\n    }\n\n    /* Timeline Card */\n    .timeline-card {\n      background: #fff;\n      padding: 24px;\n      border-radius: 12px;\n      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);\n      transition: all 0.3s ease;\n    }\n\n    .timeline-card:hover {\n      transform: translateY(-4px);\n      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);\n    }\n\n    @media (min-width: 992px) {\n      .timeline-card {\n        margin-top: 60px;\n      }\n    }\n\n    .timeline-card h4 {\n      font-size: 18px;\n      font-weight: 600;\n      margin-bottom: 10px;\n      color: #1f2937;\n    }\n\n    .timeline-card p {\n      font-size: 14px;\n      color: #6b7280;\n      line-height: 1.6;\n      margin: 0;\n    }\n\n    /* Remove bottom margin from last item */\n    .timeline-item:last-child {\n      margin-bottom: 0;\n    }\n  '
+    }}
+  />
+
+  {/* JAVASCRIPT  FILES ========================================= */}
+  {/* JQUERY.MIN JS */}
+  {/* POPPER.MIN JS */}
+  {/* BOOTSTRAP.MIN JS */}
+  {/* MAGNIFIC-POPUP JS */}
+  {/* WAYPOINTS JS */}
+  {/* COUNTERUP JS */}
+  {/* MASONRY  */}
+  {/* MASONRY  */}
+  {/* OWL  SLIDER  */}
+  {/* STICKY SIDEBAR  */}
+  {/* FORM JS */}
+  {/* IMAGE POPUP */}
+  {/* Form js */}
+  {/* Swiper JS */}
+  {/* WOW ANIMATION JS */}
+  {/* Title animation Js */}
+  {/* cursor */}
+  {/* CUSTOM FUCTIONS  */}
+</>
+
 
   );
 }
