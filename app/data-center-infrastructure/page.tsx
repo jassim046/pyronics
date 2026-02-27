@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Scripts from "../components/Scripts"; // THIS LINE FIXES THE 'CANNOT FIND NAME' ERROR
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
                 <div className="logo-header">
                   <div className="logo-header-inner logo-header-one">
                     <Link href="/">
-                      <img src="images/logo-dark.png" alt="logo" className="desktop-logo-show" />
-                      <img src="images/logo-light.png" alt="logo" className="mobile-logo-show" />
+                      <img src="/images/logo-dark.png" alt="logo" className="desktop-logo-show" />
+                      <img src="/images/logo-light.png" alt="logo" className="mobile-logo-show" />
                     </Link>
                   </div>
                 </div>
@@ -91,18 +92,15 @@ export default function Home() {
             </div>
           </div>
         </header>
-        {/* HEADER END */}
 
         {/* CONTENT START */}
         <div className="page-content">
-          {/* Breadcrumb Section */}
           <div className="page-breadcrumb">
             <div aria-label="breadcrumb" className="viewbreadcrumb text-center">
               <h2 className="text-white text-center">Data Center Infrastructure</h2>
             </div>
           </div>
 
-          {/* About Section */}
           <div className="section-full p-t90 p-b50 about-section-one-wrap">
             <div className="about-section-one">
               <div className="container">
@@ -118,18 +116,12 @@ export default function Home() {
                             Whether establishing a new facility or modernizing an existing one, Pyronics delivers optimized infrastructure designed for performance, resilience, and sustainable growth.
                           </p>
                         </div>
-                        <Link href="/contact" className="site-button">
-                          Read More
-                        </Link>
+                        <Link href="/contact" className="site-button">Read More</Link>
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12 m-b30">
                       <div className="about-us-img">
-                        <img
-                          src="images/tech/infrastructure.jpg"
-                          className="img-fluid"
-                          alt="About Image"
-                        />
+                        <img src="/images/tech/infrastructure.jpg" className="img-fluid" alt="Infrastructure" />
                       </div>
                     </div>
                   </div>
@@ -138,118 +130,31 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Services Core Grid */}
-          <section className="services-core-section p-b60">
+          <section className="services-core-section">
             <div className="services-core-container container">
               <div className="services-core-grid row">
-                
                 <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">01</span>
                   <i className="services-core-icon fa-solid fa-server" />
                   <h4>High-Performance Servers</h4>
-                  <p>Enterprise-grade servers engineered for fast data processing and application stability.</p>
+                  <p>Enterprise-grade servers engineered for fast data processing and stability.</p>
                 </div>
-
                 <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">02</span>
                   <i className="services-core-icon fa-solid fa-database" />
                   <h4>Scalable Storage Solutions</h4>
-                  <p>Secure systems designed for growing data demands and dependable backup recovery.</p>
+                  <p>Secure systems designed for growing data demands and rapid recovery.</p>
                 </div>
-
                 <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">03</span>
                   <i className="services-core-icon fa-solid fa-desktop" />
                   <h4>High-Performance Workstations</h4>
                   <p>Powerful workstations optimized for compute-intensive workloads.</p>
                 </div>
-
                 <div className="services-core-item col-lg-4 col-md-6 m-b30">
                   <span className="services-core-number">04</span>
-                  <i className="services-core-item">
-                    <span className="services-core-number">04</span>
-                    <i className="services-core-icon fa-solid fa-box" />
-                  </i>
+                  <i className="services-core-icon fa-solid fa-box" />
                   <h4>Smart Cabinet Solutions</h4>
                   <p>Integrated cabinets with power distribution and remote monitoring.</p>
                 </div>
-
                 <div className="services-core-item col-lg-4 col-md-6 m-b30">
-                  <span className="services-core-number">05</span>
-                  <i className="services-core-icon fa-solid fa-battery-full" />
-                  <h4>UPS Backup Systems</h4>
-                  <p>Reliable UPS solutions ensuring uninterrupted power during outages.</p>
-                </div>
-
-                <div className="services-core-item col-lg-4 col-md-6 m-b30">
-                  <span className="services-core-number">06</span>
-                  <i className="services-core-icon fa-solid fa-temperature-high" />
-                  <h4>Precision Cooling & Monitoring</h4>
-                  <p>Advanced cooling and DCIM for proactive infrastructure management.</p>
-                </div>
-
-              </div>
-            </div>
-          </section>
-        </div>
-        {/* CONTENT END */}
-
-        {/* FOOTER START */}
-        <footer className="site-footer footer-dark" style={{ backgroundImage: 'url("images/background/count-bg.jpg")' }}>
-          <div className="footer-top">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-4 col-md-12">
-                  <div className="widget widget_about">
-                    <div className="logo-footer clearfix">
-                      <Link href="/"><img src="images/logo-dark.png" alt="" /></Link>
-                    </div>
-                    <ul className="social-icons">
-                      <li><a href="#"><i className="bi bi-twitter-x" /></a></li>
-                      <li><a href="#"><i className="bi bi-facebook" /></a></li>
-                      <li><a href="#"><i className="bi bi-instagram" /></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6">
-                  <div className="widget f-top-space">
-                    <h3 className="widget-title">Contact Us</h3>
-                    <ul className="widget_address">
-                      <li><i className="bi bi-telephone" /> 00966 (01) 474 4411</li>
-                      <li><i className="bi bi-envelope" /> <a href="mailto:info@pyronics.co.uk">info@pyronics.co.uk</a></li>
-                      <li><i className="bi bi-map" /> <strong>Pyronics Engineering</strong><br /> Riyadh 11352, KSA</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6">
-                  <div className="widget f-top-space">
-                    <h3 className="widget-title">Quick Links</h3>
-                    <ul className="widget_address newlinks">
-                      <li><Link href="/">Home</Link></li>
-                      <li><Link href="/about">About us</Link></li>
-                      <li><Link href="/services">Services</Link></li>
-                      <li><Link href="/contact">Contact</Link></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <div className="container text-center">
-              <span className="copyrights-text">Copyright © 2026 Pyronics Engineering Solutions.</span>
-            </div>
-          </div>
-        </footer>
-        {/* FOOTER END */}
-
-        <button className="scroltop">
-          <span className="fa fa-angle-up relative" id="btn-vibrate" />
-        </button>
-      </div>
-
-      {/* CRITICAL: This component makes the hamburger work */}
-      <Scripts />
-    </>
-  );
-}
